@@ -43,7 +43,7 @@ export const CampoDeBusca = () => {
                     placeholder="Pesquise aqui um dos pratos do nosso cardápio"
                 />
             </div>
-            <div className={Styles.produtos}>
+            {/* <div className={Styles.produtos}>
                 {listaProdutos.map((produto) => (
                     <div key={produto.id} className={Styles.produto}>
                         <Image src={produto.imagem} alt={produto.nome} width={200} height={200}/>
@@ -52,7 +52,7 @@ export const CampoDeBusca = () => {
                         <span>R$ {produto.preco.toFixed(2)}</span>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }
