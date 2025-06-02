@@ -1,11 +1,10 @@
 import styles from './Cards.module.css';
 import Image from 'next/image';
-import { produtos } from '../../data/data_produtos';
 
-export default function Cards() {
-  // Função para determinar o padrão 3-2
+export default function Cards({ produtos }) {
+
   const getCardClass = (index) => {
-    const positionInGroup = index % 5; // Padrão se repete a cada 5 cards (3+2)
+    const positionInGroup = index % 5;
     return positionInGroup < 3 ? styles.threeRow : styles.twoRow;
   };
 
